@@ -1,0 +1,157 @@
+CLI commands covered in drill 1 and drill 2
+
+------------------------------- drill 1 ---------------------------------
+
+mkdir hello
+
+cd hello
+
+mkdir five
+
+cd five
+
+mkdir six
+
+cd six
+
+touch c.txt
+
+mkdir seven
+
+cd seven
+
+touch error.log
+
+cd ..
+cd ..
+cd ..
+
+pwd
+
+mkdir one
+
+cd one
+
+touch a.txt
+touch b.txt
+
+mkdir two
+cd two
+
+touch d.txt
+
+mkdir three
+
+cd three
+touch e.txt
+
+mkdir four
+
+cd four
+touch access.log
+
+cd ..
+find . -name "*.log" -type f -delete
+
+cd one
+
+echo "Unix is a family of multitasking, multiuser computer operating systems that derive from the original AT&T Unix, development starting in the 1970s at the Bell Labs research center by Ken Thompson, Dennis Ritchie, and others" >> a.txt
+
+cd ~/hello
+rm -R five
+
+mv one uno
+
+cd uno
+
+mv a.txt ./two/a.txt
+
+
+
+------------------------------- drill 2 -------------------------------------
+
+# Drill2 
+
+#to download the contents of "Harry Potter and the Goblet of fire"
+curl https://raw.githubusercontent.com/bobdeng/owlreader/master/ERead/assets/books/Harry%20Potter%20and%20the%20Goblet%20of%20Fire.txt -o harryPotterAndGobletOfFire
+
+
+#print the first three lines of the book
+head -n 3 harryPotterAndGobletOfFire
+
+#print the last 10 lines of the book
+tail harryPotterAndGobletOfFire
+
+
+#occurence of the words "Harry", "Ron", "Hermione" and "Dumbledore"
+grep -o 'Harry' harryPotterAndGobletOfFire | wc -l
+
+grep -o 'Ron' harryPotterAndGobletOfFire | wc -l
+
+grep -o 'Hermione' harryPotterAndGobletOfFire | wc -l
+
+grep -o 'Dumbledore' harryPotterAndGobletOfFire | wc -l
+
+#print lines from 100 through 200 in the book
+sed -n '100, 200p' harryPotterAndGobletOfFire
+
+#total unique words present in the book
+tr -cs '[:alnum:]' '[\n*]' < harryPotterAndGobletOfFire | sort | uniq | wc -l
+
+#to list PID and PPID of a browser (chrome)
+ps -eF | grep chrome
+
+#to stop browser
+killall chrome
+
+#List the top 3 processes by memory usage.
+ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%cpu | head -n 4
+
+
+#Start a Python HTTP server on port 8000
+python3 -m http.server 8000
+
+
+#stop the server
+ps -eF | grep python
+kill <PID>
+
+#Start a Python HTTP server on port 90
+python3 -m http.server 90
+
+#Display all active connections and the corresponding TCP / UDP ports.
+netstat -tuln
+
+#Find the pid of the process that is listening on port 5432
+ss -ltnp | grep :5432
+#it shows nothing
+
+
+
+#Install htop, vim and nginx
+sudo apt update 
+sudo apt install htop vim nginx
+
+#uninstall nginx
+sudo apt remove nginx
+
+
+#local IP address
+ifconfig
+
+#Find the IP address of google.com
+ping google.com
+
+
+
+#How to check if Internet is working using CLI?
+ping google.com
+#if it works that means internet is working
+
+which node       # to locate the node command, location - /usr/bin/node
+
+
+
+---------------------------- CLI commands ----------------------------------
+
+
