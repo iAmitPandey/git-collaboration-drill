@@ -154,4 +154,183 @@ which node       # to locate the node command, location - /usr/bin/node
 
 ---------------------------- CLI commands ----------------------------------
 
+General Commands
+man - Super Important
+Manual pages for commands. Use it to find information about other commands and their options.
+Example: man ls will show the manual for the ls command.
+
+cd (Understand flags: dot ., double dot .., tilde ~, dash -)
+Change directory.
+
+cd .  Stays in the current directory.
+cd ..  Moves up one directory.
+cd ~  Moves to the home directory.
+cd -  Switches to the previous directory.
+mkdir
+Make directory. Creates a new directory.
+Example: mkdir new_folder
+
+mv
+Move or rename files/directories.
+
+Move: mv file.txt /new_location/
+Rename: mv old_name.txt new_name.txt
+cp (with recursive flag -r)
+Copy files or directories.
+
+Copy a file: cp file.txt /new_location/
+Copy a directory with its contents: cp -r dir_name /new_location/
+ls (with different flags)
+List directory contents.
+
+ls -l  Detailed list with file permissions, ownership, size, and modification date.
+ls -a  Lists all files, including hidden files.
+ls -h  Human-readable file sizes.
+Combine: ls -alh
+pwd
+Print working directory. Displays the full path of the current directory.
+Example: pwd
+
+rm
+Remove files or directories.
+
+Remove a file: rm file.txt
+Remove a directory and its contents: rm -r dir_name
+Use -f to force deletion without prompts: rm -rf dir_name
+chmod  Super Important
+Change file mode (permissions).
+
+chmod 755 file.txt - Sets read, write, and execute permissions for the owner, and read and execute for others.
+chown - Super Important
+Change file owner and group.
+
+chown user:group file.txt - Changes the owner to user and the group to group.
+sudo
+Superuser do. Execute commands with root (administrator) privileges.
+Example: sudo apt update
+
+apt
+Advanced Package Tool. Used in Debian-based distributions to manage packages.
+
+Update package list: sudo apt update
+Install a package: sudo apt install package_name
+Remove a package: sudo apt remove package_name
+touch
+Create an empty file or update the timestamp of an existing file.
+Example: touch new_file.txt
+
+cat
+Concatenate and display file content.
+Example: cat file.txt
+
+less
+View file content page by page.
+Example: less file.txt
+
+more
+View file content page by page (older version of less).
+Example: more file.txt
+
+tail
+View the last few lines of a file.
+
+tail -n 10 file.txt - View the last 10 lines of the file.
+tail -f file.txt - Continuously monitor the file for new lines (useful for logs).
+rsync
+Remote synchronization. Copy files and directories efficiently.
+Example: rsync -av source/ destination/
+
+grep
+Search text using patterns.
+
+Search for a word in a file: grep "word" file.txt
+Search recursively in directories: grep -r "word" /path/to/directory/
+find - Super Important
+Search for files and directories.
+
+Find files by name: find /path -name "file.txt"
+Find files modified within the last day: find /path -mtime -1
+sort
+Sort lines of text files.
+Example: sort file.txt
+
+date
+Display or set the system date and time.
+Example: date "+%Y-%m-%d %H:%M:%S"
+
+tree (needs to be installed additionally)
+Display directory structure in a tree format.
+Example: tree
+
+wc
+Word count. Count lines, words, and characters in a file.
+Example: wc file.txt
+
+OS/Process Related Commands
+ps
+Report a snapshot of current processes.
+
+ps aux - Detailed list of all running processes.
+top
+Display real-time system process activity.
+Example: top
+
+df
+Disk space usage.
+
+df -h - Human-readable format.
+uname
+Display system information.
+Example: uname -a
+
+free
+Memory usage.
+
+free -h - Human-readable format.
+lspci
+List all PCI devices.
+Example: lspci
+
+kill (with flags)
+Terminate processes.
+
+kill PID - Send SIGTERM (graceful shutdown) to the process with the specified PID.
+kill -9 PID - Send SIGKILL (forceful shutdown).
+Network Related Commands
+ping
+Check connectivity to a host.
+Example: ping google.com
+
+ifconfig
+Network interface configuration (deprecated, use ip instead).
+Example: ifconfig
+
+ssh
+Secure Shell. Connect to remote servers securely.
+Example: ssh user@host
+
+Bash Related Commands
+xargs
+Build and execute command lines from input.
+Example: find . -name "*.txt" | xargs rm
+
+printenv
+Print environment variables.
+Example: printenv PATH
+
+nano
+Simple text editor in the terminal.
+Example: nano file.txt
+
+awk
+Pattern scanning and processing language.
+Example: awk '{print $1}' file.txt - Print the first column of a file.
+
+sed
+Stream editor for filtering and transforming text.
+Example: sed 's/old/new/g' file.txt - Replace "old" with "new" in a file.
+
+Pipe operator |
+Send the output of one command to another command.
+Example: cat file.txt | grep "word"
 
