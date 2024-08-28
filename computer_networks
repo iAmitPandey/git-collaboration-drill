@@ -1,0 +1,64 @@
+A computer network is a collection of interconnected devices that communicates with each other to share resouces, exchange data and enable communication. These devices are connected through various types of communication channels, such as ccables or wireless technologies.
+
+Key Components of a Computer Network:
+
+
+1. Nodes: Devices in the network (e.g., computers, printers, smartphones).
+
+2. Transmission Media: The medium that allows data to travel between devices (e.g., cables, fiber optics, or wireless signals).
+
+3. Protocols: Rules or standards (e.g., TCP/IP) that govern how data is transmitted and received.
+
+4. Network Devices: Equipment like routers, switches, and hubs that facilitate communication between devices.
+
+
+
+Types of Computer Networks:
+
+
+1. Local Area Network (LAN): A network that spans a small geographical area, like a home, office, or building.
+
+2. Wide Area Network (WAN): A network that covers a large geographical area, often connecting multiple LANs (e.g., the internet).
+
+3. Metropolitan Area Network (MAN): A network that spans a city or large campus.
+
+4. Personal Area Network (PAN): A small network used for communication between personal devices, such as smartphones and laptops.
+
+
+
+Types of Network Topologies:
+
+
+1. Star Topology: All devices are connected to a central hub.
+
+2. Bus Topology: All devices share a common communication line.
+
+3. Ring Topology: Devices are connected in a circular chain.
+
+4. Mesh Topology: Devices are interconnected, often providing redundancy.
+
+
+
+Benefits of a Computer Network:
+
+
+1. Resource Sharing: Devices can share resources such as printers, files, and internet access.
+
+2. Communication: Enables communication through emails, video conferencing, instant messaging, etc.
+
+3. Data Accessibility: Centralized storage systems allow easy access to shared data.
+
+4. Collaboration: Multiple users can work on the same project or document simultaneously.
+
+
+
+Common Types of Network Protocols:
+
+
+1. TCP/IP (Transmission Control Protocol/Internet Protocol): The foundation protocol suite for most networks, including the internet.
+
+2. HTTP/HTTPS (Hypertext Transfer Protocol/Secure): Used for transferring web pages.
+
+3. FTP (File Transfer Protocol): Used for transferring files between computers.
+
+4. SMTP (Simple Mail Transfer Protocol): Used for sending emails.
