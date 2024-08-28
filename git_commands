@@ -1,0 +1,13 @@
+git commands -
+
+git reset HEAD <file>          #to unstage a file
+
+git merge <branch to merge>    #to merge a branch (fast-forward merge)
+
+git rebase <branch name>       #to avoid merge commits, run this command on the branch you want tp sync with the main branch
+
+#pulling changes from a remote repository
+
+git pull origin main           # to pull changes
+git pull --rebase              # to rebase any unpushed commits
+
