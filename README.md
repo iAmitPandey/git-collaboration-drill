@@ -1,6 +1,6 @@
-#This is a git-collaboration-drill group 
+# This is a git-collaboration-drill group 
 
-##The group members are:
+## The group members are:
 
 * Adarsh Kumar
 * Amit Pandey
